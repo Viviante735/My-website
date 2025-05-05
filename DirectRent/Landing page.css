@@ -1,0 +1,673 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Buttons */
+  .nav-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn.login {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .btn.login:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  .btn.primary {
+    background-color: #ff6b00;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn.primary:hover {
+    background-color: #e65a00;
+  }
+  /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+  
+  /* Search Form */
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-form select,
+  .search-form input[type="range"] {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: none;
+    min-width: 160px;
+  }
+  
+  .range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e65a00;
+  }
+  
+  .btn-secondary {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #fff;
+    color: #121212;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .search-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-form select,
+    .search-form input[type="range"],
+    .btn-primary {
+      width: 100%;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .benefits-section {
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff6b00;
+  }
+  
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .benefit-card {
+    background-color: #262626;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.3);
+  }
+  
+  .benefit-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .benefit-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  @media (max-width: 600px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .featured-section {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ff6b00;
+    margin-bottom: 30px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .filter-btn:hover,
+  .filter-btn.active {
+    background-color: #ff6b00;
+  }
+  
+  .listing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .listing-card {
+    background-color: #262626;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .listing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.3);
+  }
+  
+  .listing-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .listing-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .listing-content h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .location {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff6b00;
+    font-size: 0.9rem;
+  }
+  
+  .listing-content p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .view-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #ff6b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .view-btn:hover {
+    background-color: #e05f00;
+  }
+  
+  @media (max-width: 600px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .listing-content h3 {
+      font-size: 1rem;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .testimonials-section {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ff6b00;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background-color: #262626;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 380px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.3);
+  }
+  
+  .testimonial-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-content {
+    text-align: left;
+  }
+  
+  .testimonial-quote {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    margin-bottom: 10px;
+  }
+  
+  .author-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff6b00;
+  }
+  
+  .author-role {
+    font-size: 0.9rem;
+    color: #ff6b00;
+  }
+  
+  .testimonial-rating {
+    font-size: 1rem;
+    color: #ff6b00;
+  }
+  
+  .star {
+    margin-right: 5px;
+  }
+  
+  .partners {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .partners h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .partner-logos img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 600px) {
+    .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      margin-bottom: 30px;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .join-community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #1f1f1f, #2a2a2a);
+    padding: 60px 20px;
+    color: #ffffff;
+  }
+  
+  .community-content {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  .community-content h2 {
+    font-size: 2rem;
+    color: #ff6b00;
+    margin-bottom: 10px;
+  }
+  
+  .community-content p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .community-form {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+  }
+  
+  input[type="email"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #ff6b00;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e35c00;
+  }
+  
+  @media (max-width: 768px) {
+    .join-community {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  .cta-section {
+    background-image: url('https://source.unsplash.com/1600x600/?real-estate,houses');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .cta-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .cta-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .cta-btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .primary-btn {
+    background-color: orange;
+    color: white;
+  }
+
+  .primary-btn:hover {
+    background-color: darkorange;
+  }
+
+  .secondary-btn {
+    border: 2px solid white;
+    color: white;
+  }
+
+  .secondary-btn:hover {
+    background-color: white;
+    color: black;
+  }

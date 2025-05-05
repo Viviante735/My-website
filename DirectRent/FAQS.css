@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ff6b00;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+}
+
+.navbar .brand {
+  color: #ff6b00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 24px;
+}
+
+.faq-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.accordion-title {
+  display: block;
+  padding: 15px;
+  color: #f5f5f5;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  background-color: #333;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #2c2c2c;
+  color: #ff6b00;
+  display: none;
+}
+
+.accordion-item input:checked ~ .accordion-content {
+  display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+}

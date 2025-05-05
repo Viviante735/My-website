@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Direct Rent - Hero Section</title>
+  <link rel="stylesheet" href="Hero.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>Rent Directly from Property Owners — No Agents, No Hassle.</h1>
+        <p>Verified listings in Lagos. Save time, skip agents, and rent smarter.</p>
+
+        <form class="search-bar">
+          <select>
+            <option selected disabled>Choose Location</option>
+            <option>Lekki</option>
+            <option>Yaba</option>
+            <option>Ikoyi</option>
+            <option>Surulere</option>
+          </select>
+
+          <div class="slider-group">
+            <label for="priceRange">Max Price: ₦<span id="priceLabel">200000</span></label>
+            <input type="range" id="priceRange" min="50000" max="1000000" step="50000" value="200000" oninput="document.getElementById('priceLabel').textContent = this.value">
+          </div>
+
+          <select>
+            <option selected disabled>Bedrooms</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3+ Bedrooms</option>
+          </select>
+
+          <button type="submit" class="primary-btn">Search</button>
+        </form>
+
+        <a href="#" class="secondary-cta">Own a Property? List it Free</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

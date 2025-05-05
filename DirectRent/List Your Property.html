@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>List Your Property - Direct Rent</title>
+  <link rel="stylesheet" href="List Your Property.css">
+</head>
+<body>
+  <section class="list-section">
+    <div class="container">
+      <h1>List Your Property</h1>
+      <p>Reach thousands of verified house seekers in Lagos. Take full control, avoid agents, and rent faster.</p>
+
+      <form class="list-form">
+        <!-- Property Title -->
+        <label for="property-title">Property Title</label>
+        <input type="text" id="property-title" placeholder="e.g. 2 Bedroom Apartment in Lekki Phase 1" required>
+      
+        <!-- Location -->
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g. Lekki Phase 1, Lagos" required>
+      
+        <!-- Price -->
+        <label for="price">Price (₦)</label>
+        <input type="number" id="price" placeholder="e.g. 350000" required>
+      
+        <!-- Bedrooms -->
+        <label for="bedrooms">Bedrooms</label>
+        <select id="bedrooms" required>
+          <option value="">Select</option>
+          <option>1 Bedroom</option>
+          <option>2 Bedrooms</option>
+          <option>3 Bedrooms</option>
+          <option>4+ Bedrooms</option>
+        </select>
+      
+        <!-- Upload Photos -->
+        <label for="photos">Upload Photos</label>
+        <input type="file" id="photos" accept="image/*" multiple>
+      
+        <!-- Upload Video -->
+        <label for="video">Upload Video (optional)</label>
+        <input type="file" id="video" accept="video/*">
+      
+        <!-- Contact Phone -->
+        <label for="phone">Contact Phone</label>
+        <input type="tel" id="phone" placeholder="e.g. 08012345678" required>
+      
+        <!-- Description -->
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Give more details about your property" rows="5" required></textarea>
+      
+        <!-- Submit -->
+        <a href="Sign up for Landlord.html" class="btn-submit">Submit Listing</a>
+      </form>
+    </div>
+  </section>
+
+  <script src="List Your Property.js"></script>
+</body>
+</html>

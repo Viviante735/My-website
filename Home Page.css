@@ -1,0 +1,254 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #fff;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 10px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff7f50;
+}
+
+/* Key Benefits Section */
+#benefits {
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#benefits h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.benefit {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.benefit h3 {
+    font-size: 24px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+/* Featured Listings Section */
+#featured-listings {
+    padding: 40px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+#featured-listings h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.listing {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.listing img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.listing button {
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #444;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+/* Join Community Section */
+#join-community {
+    background-color: #222;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#join-community h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#join-community input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#join-community button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff7f50;
+}
+
+/* Call to Action Banner */
+#cta-banner {
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#cta-banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons button {
+    margin: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}

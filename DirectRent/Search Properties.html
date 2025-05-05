@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Properties | Direct Rent</title>
+  <link rel="stylesheet" href="Search Properties.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Search Properties</h1>
+    <p>Find the perfect rental directly from verified property owners in Lagos.</p>
+  </header>
+
+  <!-- Mobile Toggle Button -->
+  <button id="toggleFiltersBtn" class="toggle-filters-btn">Show Filters</button>
+
+  <section class="filters">
+    <form class="filter-form" id="filterForm">
+      <input type="text" placeholder="Search location..." />
+
+      <select>
+        <option value="">Price Range</option>
+        <option value="0-100k">₦0 - ₦100k</option>
+        <option value="100k-300k">₦100k - ₦300k</option>
+        <option value="300k+">₦300k and above</option>
+      </select>
+
+      <select>
+        <option value="">Bedrooms</option>
+        <option value="1">1 Bedroom</option>
+        <option value="2">2 Bedrooms</option>
+        <option value="3">3+ Bedrooms</option>
+      </select>
+
+      <button type="submit" class="btn-primary">Filter</button>
+    </form>
+  </section>
+
+  <section class="property-results">
+    <div class="property-card">
+      <img src="/Pictures/LUXURY.jpg" alt="Property Image" />
+      <div class="property-info">
+        <h3>2-Bedroom Apartment in Lekki</h3>
+        <p>₦2,000,000/month • 2 Beds • 2 Baths</p>
+        <a href="#" class="btn-secondary">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <img src="/Pictures/property-6.jpeg" alt="Property Image" />
+      <div class="property-info">
+        <h3>1-Bedroom Apartment in Yaba</h3>
+        <p>₦1,000,000/month • 1 Bed • 1 Bath</p>
+        <a href="#" class="btn-secondary">View Details</a>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <img src="/Pictures/3-bedroom-flaT.jpeg" alt="Property Image" />
+      <div class="property-info">
+        <h3>3-Bedroom Flat in Ikeja</h3>
+        <p>₦3,500,000/month • 3 Beds • 3 Baths</p>
+        <a href="#" class="btn-secondary">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="Search Properties.js"></script>
+</body>
+</html>

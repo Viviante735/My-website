@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark container */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ff8c00; /* Accent color for headings */
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #ccc; /* Lighter text for labels */
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #444; /* Dark border */
+    border-radius: 6px;
+    background-color: #333; /* Dark input fields */
+    color: #fff;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #ff8c00; /* Accent color on focus */
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button.signup-btn {
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff8c00; /* Accent color for button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button.signup-btn:hover {
+    background-color: #e67e00; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+  }
+  
+  button.signup-btn:active {
+    background-color: #e67e00; /* Darker shade on click */
+    transform: scale(0.98); /* Shrink on click for interactive effect */
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #444; /* Dark background for file input */
+    border: 2px solid #444;
+    border-radius: 6px;
+  }
+  
+  input[type="file"]:focus {
+    border-color: #ff8c00; /* Accent color on focus */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .signup-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    label,
+    input,
+    select,
+    button {
+      font-size: 14px;
+    }
+  
+    button.signup-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  
