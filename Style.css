@@ -62,17 +62,28 @@ header {
   padding: 0.8rem 1.5rem;
 }
 
+/* Mobile Navigation Style */
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
+  /* Your usual nav styles */
 }
+
+/* Mobile Navigation when menu is active */
+nav.show {
+  display: block;
+}
+
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ff5722;
 }
+.nav-menu {
+display: flex;
+align-items: center;
+}
+
 
 nav ul {
   list-style: none;
@@ -115,11 +126,13 @@ nav ul li a:hover::after {
   color: #fff;
   cursor: pointer;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+  }
+  .logo h1 {
+    display: none;
   }
 
   nav {
@@ -153,6 +166,7 @@ nav ul li a:hover::after {
 .header-buttons {
   display: flex;
   gap: 1rem;
+  margin-left: 15px;
 }
 
 .btn {
@@ -900,11 +914,4 @@ body {
   border-top: 1px solid #222;
   padding-top: 1rem;
   color: #999;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }

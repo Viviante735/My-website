@@ -6,45 +6,38 @@
   <title>Direct Rent</title>
   <link rel="stylesheet" href="Style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2HGEPDP22"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L2HGEPDP22');
-</script>
 <body>
-<header class="header">
-  <div class="container">
-    <div class="logo">
-      <img src="/Pictures/DIRECT RENT.jpg" alt="logo icon" class="logo-img">
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="/Pictures/DIRECT RENT.jpg" alt="logo icon" class="logo-img">
         <h1>Direct Rent</h1> <!-- Product name next to logo -->
-    </div>
-      <nav class="nav">
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
         
-        <ul class="nav-links">
-          <li><a href="/DirectRent/Search Properties.html">Search Properties</a></li>
-          <li><a href="/DirectRent/How it works.html">How It Works</a></li>
-          <li><a href="/DirectRent/For Landlords.html">For Landlords</a></li>
-          <li><a href="/DirectRent/FAQS.html">FAQS</a></li>
-          <li><a href="/DirectRent/Contact Us.html">Contact Us</a></li>
-          
-        </ul>
-      </nav>
-      <div class="header-buttons">
+      </div>
+    <nav class="nav-menu" id="navMenu">
+  <ul class="nav-links">
+    <li><a href="/DirectRent/Search Properties.html">Search Properties</a></li>
+    <li><a href="/DirectRent/How it works.html">How It Works</a></li>
+    <li><a href="/DirectRent/For Landlords.html">For Landlords</a></li>
+    <li><a href="/DirectRent/FAQS.html">FAQS</a></li>
+    <li><a href="/DirectRent/Contact Us.html">Contact Us</a></li>
+  </ul>
+        <div class="header-buttons">
         <a href="/DirectRent/Login.html" class="btn login-btn">Login / Sign Up</a>
         <a href="/DirectRent/List Your Property.html" class="btn cta-btn">List Your Property</a>
       </div>
     </div>
+</nav>
+
+
   </header>
+
   <section class="hero">
     <div class="overlay">
       <div class="hero-content">
         <h1>Rent Directly from Property Owners — No Agents, No Hassle.</h1>
         <p>Verified listings in Lagos. Save time, skip agents, and rent smarter.</p>
-  
         <form class="search-bar">
           <select name="location">
             <option disabled selected>Choose Location</option>
@@ -52,23 +45,20 @@
             <option>Yaba</option>
             <option>Ikeja</option>
           </select>
-  
           <input type="range" min="50000" max="500000" step="50000" />
-          
           <select name="bedrooms">
             <option disabled selected>Bedrooms</option>
             <option>1 Bedroom</option>
             <option>2 Bedrooms</option>
             <option>3+ Bedrooms</option>
           </select>
-  
           <button type="submit">Search</button>
         </form>
-  
         <a href="#" class="secondary-cta">Own a Property? List with little Fee</a>
       </div>
     </div>
   </section>
+
   <section class="how-it-works">
     <div class="container">
       <h2>How It Works</h2>
@@ -91,6 +81,7 @@
       </div>
     </div>
   </section>
+
   <section class="benefits">
     <div class="container">
       <h2>Why Choose Direct Rent?</h2>
@@ -123,11 +114,11 @@
       </div>
     </div>
   </section>
+
   <section class="featured-listings">
     <div class="container">
       <h2>Featured Properties in Lagos</h2>
       <div class="listing-grid">
-        <!-- Property Card 1 -->
         <div class="property-card">
           <img src="/Pictures/Two-Bedroom-Apartment.jpg" alt="Property Image">
           <div class="property-info">
@@ -137,8 +128,6 @@
             <a href="#" class="view-details">View Details</a>
           </div>
         </div>
-  
-        <!-- Property Card 2 -->
         <div class="property-card">
           <img src="/Pictures/BEDROOM.jpg" alt="Property Image">
           <div class="property-info">
@@ -148,8 +137,6 @@
             <a href="#" class="view-details">View Details</a>
           </div>
         </div>
-  
-        <!-- Property Card 3 -->
         <div class="property-card">
           <img src="/Pictures/3 BEDROOM.jpg" alt="Property Image">
           <div class="property-info">
@@ -159,17 +146,14 @@
             <a href="#" class="view-details">View Details</a>
           </div>
         </div>
-  
-        <!-- Add more cards as needed -->
       </div>
     </div>
   </section>
+
   <section class="testimonials-section">
     <div class="container">
       <h2>What Our Users Are Saying</h2>
       <div class="testimonial-grid">
-  
-        <!-- Tenant Testimonial -->
         <div class="testimonial-card">
           <div class="user-info">
             <img src="/Pictures/TENANT PIC.jpg" alt="Tenant Photo">
@@ -181,8 +165,6 @@
           <div class="stars">★★★★★</div>
           <p>"Direct Rent helped me skip all the agent stress. I found my new place in just 2 days — and it was exactly what I wanted!"</p>
         </div>
-  
-        <!-- Landlord Testimonial -->
         <div class="testimonial-card">
           <div class="user-info">
             <img src="/Pictures/LANDLORD PHOTO.jpg" alt="Landlord Photo">
@@ -192,10 +174,12 @@
             </div>
           </div>
           <div class="stars">★★★★☆</div>
-          <p>"I listed my apartment for free and got 3 serious inquiries within
+          <p>"I listed my apartment for free and got 3 serious inquiries within days. It's an easy way to connect with serious tenants!"</p>
         </div>
+      </div>
     </div>
   </section>
+
   <section class="landlords-section">
     <div class="container">
       <div class="landlords-content">
@@ -214,44 +198,43 @@
         </div>
       </div>
     </div>
-    <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-    
-        <div class="accordion">
-          <div class="accordion-item">
-            <input type="checkbox" id="faq1" />
-            <label for="faq1" class="accordion-title">How do I know listings are real?</label>
-            <div class="accordion-content">
-              <p>Every listing is manually reviewed and verified by our team before being published.</p>
-            </div>
-          </div>
-    
-          <div class="accordion-item">
-            <input type="checkbox" id="faq2" />
-            <label for="faq2" class="accordion-title">Can I negotiate rent?</label>
-            <div class="accordion-content">
-              <p>Yes! You can chat or call the landlord directly to negotiate rent terms.</p>
-            </div>
-          </div>
-    
-          <div class="accordion-item">
-            <input type="checkbox" id="faq3" />
-            <label for="faq3" class="accordion-title">Is Direct Rent free?</label>
-            <div class="accordion-content">
-              <p>Tenants can browse listings for free. Landlords pay a small fee to list their property.</p>
-            </div>
-          </div>
-    
-          <div class="accordion-item">
-            <input type="checkbox" id="faq4" />
-            <label for="faq4" class="accordion-title">How do I contact landlords?</label>
-            <div class="accordion-content">
-              <p>Once you find a property you like, click "Contact Landlord" to chat or call directly.</p>
-            </div>
-          </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <input type="checkbox" id="faq1" />
+        <label for="faq1" class="accordion-title">How do I know listings are real?</label>
+        <div class="accordion-content">
+          <p>Every listing is manually reviewed and verified by our team before being published.</p>
         </div>
-      </section>
-      <section class="join-community">
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="faq2" />
+        <label for="faq2" class="accordion-title">Can I negotiate rent?</label>
+        <div class="accordion-content">
+          <p>Yes! You can chat or call the landlord directly to negotiate rent terms.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="faq3" />
+        <label for="faq3" class="accordion-title">Is Direct Rent free?</label>
+        <div class="accordion-content">
+          <p>Tenants can browse listings for free. Landlords pay a small fee to list their property.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="faq4" />
+        <label for="faq4" class="accordion-title">How do I contact landlords?</label>
+        <div class="accordion-content">
+          <p>Once you find a property you like, click "Contact Landlord" to chat or call directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="join-community">
         <div class="community-container">
           <h2>Be the first to know when new homes go live.</h2>
           <form class="subscribe-form">
@@ -281,7 +264,7 @@
               <li><a href="#contact">Contact</a></li>
               <li><a href="#faq">FAQs</a></li>
               <li><a href="#terms">Terms</a></li>
-              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#privacy">Privacy</a></li> 
             </ul>
           </div>
       
@@ -303,21 +286,12 @@
               <input type="email" placeholder="Your email" required>
               <textarea placeholder="Your message" rows="3" required></textarea>
               <button type="submit">Send
-              </div>
               <p class="footer-text">© 2025 Direct Rent | All rights reserved.</p>
             </footer>
-      
-      
-      
-  
-
-           
-              
-  
-  
-  
-  
+            <script src="index.js"></script>
 
 
 </body>
 </html>
+
+    
