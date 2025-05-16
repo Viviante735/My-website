@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Direct Rent</title>
-  <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2HGEPDP22"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-L2HGEPDP22');
-</script>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="/Pictures/DIRECT RENT.jpg" alt="logo icon" class="logo-img">
-        <h1>Direct Rent</h1> <!-- Product name next to logo -->
-        <div class="menu-toggle" id="menuToggle">&#9776;</div>
-        
-      </div>
-      <nav class="nav-menu-mobile" id="navMenuMobile">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Direct Rent</title>
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2HGEPDP22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L2HGEPDP22");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="Pictures/DIRECT RENT.jpg"
+            alt="logo icon"
+            class="logo-img"
+          />
+          <h1>Direct Rent</h1>
+        </div>
+        <nav class="nav-menu" id="navMenu">
           <ul class="nav-links">
-            <li><a href="DirectRent/Search Properties.html">Search Properties</a></li>
+            <li>
+              <a href="DirectRent/Search Properties.html">Search Properties</a>
+            </li>
             <li><a href="DirectRent/How it works.html">How It Works</a></li>
             <li><a href="DirectRent/For Landlords.html">For Landlords</a></li>
             <li><a href="DirectRent/FAQS.html">FAQS</a></li>
             <li><a href="DirectRent/Contact Us.html">Contact Us</a></li>
           </ul>
           <div class="header-buttons">
-            <a href="DirectRent/Login.html" class="btn login-btn">Login / Sign Up</a>
-            <a href="DirectRent/List Your Property.html" class="btn cta-btn" style="
-            width: 100%;">List Your Property</a>
+            <a href="DirectRent/Login.html" class="btn login-btn"
+              >Login / Sign Up</a
+            >
+            <a href="DirectRent/List Your Property.html" class="btn cta-btn"
+              >List Your Property</a
+            >
           </div>
         </nav>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </div>
+      <nav class="nav-menu-mobile" id="navMenuMobile">
+        <ul class="nav-links">
+          <li>
+            <a href="DirectRent/Search Properties.html">Search Properties</a>
+          </li>
+          <li><a href="DirectRent/How it works.html">How It Works</a></li>
+          <li><a href="DirectRent/For Landlords.html">For Landlords</a></li>
+          <li><a href="DirectRent/FAQS.html">FAQS</a></li>
+          <li><a href="DirectRent/Contact Us.html">Contact Us</a></li>
+        </ul>
+        <div class="header-buttons">
+          <a href="DirectRent/Login.html" class="btn login-btn"
+            >Login / Sign Up</a
+          >
+          <a
+            href="DirectRent/List Your Property.html"
+            class="btn cta-btn"
+            style="width: 100%"
+            >List Your Property</a
+          >
+        </div>
+      </nav>
     </header>
 
     <section class="hero">
@@ -54,7 +94,13 @@
               <option>Ikeja</option>
             </select>
             <label for="price-range">Price Range</label>
-            <input id="price-range" type="range" min="50000" max="500000" step="50000" />
+            <input
+              id="price-range"
+              type="range"
+              min="50000"
+              max="500000"
+              step="50000"
+            />
             <select name="bedrooms">
               <option disabled selected>Bedrooms</option>
               <option>1 Bedroom</option>
@@ -63,7 +109,9 @@
             </select>
             <button type="submit">Search</button>
           </form>
-          <a href="#" class="secondary-cta">Own a Property? List with little Fee</a>
+          <a href="#" class="secondary-cta"
+            >Own a Property? List with little Fee</a
+          >
         </div>
       </div>
     </section>
@@ -150,10 +198,7 @@
             </div>
           </div>
           <div class="property-card">
-            <img 
-              src="Pictures/BEDROOM.jpg" 
-              alt="Property Image" 
-            />
+            <img src="Pictures/BEDROOM.jpg" alt="Property Image" />
             <div class="property-info">
               <h3>₦1,000,000 / year</h3>
               <p>1 Bedroom Studio – Yaba</p>
@@ -244,7 +289,9 @@
       <div class="accordion">
         <div class="accordion-item">
           <input type="checkbox" id="faq1" />
-          <label for="faq1" class="accordion-title">How do I know listings are real?</label>
+          <label for="faq1" class="accordion-title"
+            >How do I know listings are real?</label
+          >
           <div class="accordion-content">
             <p>
               Every listing is manually reviewed and verified by our team before
@@ -304,9 +351,7 @@
         <h2>Find Your Next Home Without the Middleman.</h2>
         <div class="cta-buttons">
           <a href="#" class="cta-btn primary-btn">Start Browsing</a>
-          <a href="#" class="cta-btn secondary-btn"
-            >List a Property</a
-          >
+          <a href="#" class="cta-btn secondary-btn">List a Property</a>
         </div>
       </div>
     </section>
@@ -337,14 +382,20 @@
         <div class="footer-contact">
           <h4>Contact Us</h4>
           <form action="#" method="post" class="contact-form">
-            <input type="email" name="email" id="email" placeholder="Your email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
             <textarea placeholder="Your message" rows="3" required></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
       </div>
 
-       <p class="footer-text">© 2025 Direct Rent | All rights reserved.</p>
+      <p class="footer-text">© 2025 Direct Rent | All rights reserved.</p>
     </footer>
     <script src="index.js"></script>
   </body>

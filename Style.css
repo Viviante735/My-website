@@ -813,7 +813,7 @@ nav ul li a:hover::after {
     max-height: 40px; /* Adjust the logo size for mobile */
   }
   .logo h1 {
-    display: none;
+    display: block;
   }
 
   .nav-menu {
