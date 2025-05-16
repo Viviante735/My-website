@@ -1,4 +1,4 @@
-/* Base Reset */ 
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
   color: #f1f1f1;
 }
@@ -19,7 +19,7 @@ body {
   background-color: #1c1c1c;
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .container {
@@ -30,10 +30,11 @@ body {
   margin: auto;
 }
 
-
 .logo {
   display: flex;
-  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5722;
 }
 
 .logo-img {
@@ -46,44 +47,13 @@ body {
   color: #ff5722; /* Set the color of the product name */
 }
 
-/* Base styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #fff;
-}
-
-header {
-  background-color: #1c1c1c;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 0.8rem 1.5rem;
-}
-
-/* Mobile Navigation Style */
-.nav-container {
-  display: none;
-  /* Your usual nav styles */
-}
-
-/* Mobile Navigation when menu is active */
-nav.show {
-  display: block;
-}
-
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff5722;
-}
 .nav-menu {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
-
+.nav-menu-mobile {
+  display: none;
+}
 
 nav ul {
   list-style: none;
@@ -102,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -126,41 +96,6 @@ nav ul li a:hover::after {
   color: #fff;
   cursor: pointer;
 }
-/* Responsive */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-  .logo h1 {
-    display: none;
-  }
-
-  nav {
-    display: none;
-    width: 100%;
-    background-color: #1c1c1c;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  nav ul li {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
-  nav ul li a {
-    width: 100%;
-    display: block;
-  }
-
-  nav.show {
-    display: block;
-  }
-}  
 
 /* Header Buttons */
 .header-buttons {
@@ -200,7 +135,7 @@ nav ul li a:hover::after {
   background-color: #e64a19;
 }
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c'); /* Lagos building sample */
+  background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c"); /* Lagos building sample */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -290,19 +225,31 @@ nav ul li a:hover::after {
   margin-bottom: 40px;
   color: #ff6b00;
 }
+.how-it-works .container, 
+.benefits .container,
+ .featured-listings .container,
+ .testimonials-section .container,
+ .landlords-section .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 
-.steps {
+.steps, .benefit-cards, .listing-grid, .testimonial-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
-.step {
+.step, .card, .property-card, .testimonial-card {
+  flex: 1 1 250px;
+  min-width: 200px;
+  max-width: 300px;
   background-color: #1e1e1e;
   border-radius: 10px;
   padding: 30px 20px;
-  max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #333;
 }
@@ -328,13 +275,6 @@ nav ul li a:hover::after {
   color: #cccccc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .steps {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /* Benefits Section */
 .benefits {
   background-color: #121212;
@@ -347,21 +287,6 @@ nav ul li a:hover::after {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   font-weight: 700;
-}
-
-.benefit-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-}
-
-.benefit-cards .card {
-  background-color: #1e1e1e;
-  padding: 2rem 1.5rem;
-  border-radius: 12px;
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
 }
 
 .benefit-cards .card:hover {
@@ -404,20 +329,6 @@ nav ul li a:hover::after {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
-}
-
-.listing-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.property-card {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .property-card:hover {
@@ -484,26 +395,9 @@ nav ul li a:hover::after {
   font-weight: 700;
 }
 
-.testimonial-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.testimonial-card {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .testimonial-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
 .user-info {
@@ -618,14 +512,6 @@ nav ul li a:hover::after {
   height: auto;
   border-radius: 12px;
 }
-/* Dark theme styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
 
 .faq-section {
   max-width: 800px;
@@ -665,7 +551,7 @@ body {
 }
 
 .accordion-title::after {
-  content: '+';
+  content: "+";
   position: absolute;
   right: 20px;
   font-size: 20px;
@@ -691,7 +577,7 @@ body {
 }
 
 .accordion-item input:checked + .accordion-title::after {
-  content: '-';
+  content: "-";
   transform: rotate(180deg);
 }
 
@@ -720,7 +606,7 @@ body {
 .subscribe-form {
   margin-top: 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -820,9 +706,8 @@ body {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 2rem;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -847,7 +732,6 @@ body {
 
 /* Footer - Social Media */
 .footer-social {
-  width: 30%; /* Adjust the width if needed */
   margin-bottom: 20px;
 }
 
@@ -859,7 +743,7 @@ body {
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
@@ -907,11 +791,102 @@ body {
   background-color: #e64a19;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  border-top: 1px solid #222;
-  padding-top: 1rem;
-  color: #999;
+.footer-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .logo-img {
+    max-height: 40px; /* Adjust the logo size for mobile */
+  }
+  .logo h1 {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu-mobile {
+    padding: 1rem;
+    border-top: 1px solid #333;
+    z-index: 1000;
+    width: 100%;
+  }
+  .nav-menu-mobile .header-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav.show {
+    display: block;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 10px;
+  }
+  .hero-content a {
+    font-size: 1rem;
+  }
+
+  .subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-contact {
+    width: 100%;
+  }
+  .footer-contact input,
+  .footer-contact textarea {
+    width: 100%;
+  }
+  .footer-contact button {
+    width: 100%;
+  }
 }
